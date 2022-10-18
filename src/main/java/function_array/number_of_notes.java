@@ -8,7 +8,7 @@ Output:
 5 1
 1 1 */
 
-package arrayproblems;
+package function_array;
 
 import java.util.Scanner;
 

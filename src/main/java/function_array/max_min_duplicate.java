@@ -1,5 +1,5 @@
 // 7. Generate 20 random numbers from 0 to 100 and print the max, min and duplicate random numbers (if any)
-package arrayproblems;
+package function_array;
 
 import java.util.HashSet;
 import java.util.Random;

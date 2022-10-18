@@ -2,7 +2,7 @@
 how many even and how many odd numbers using these functions: average(), countEvenNumbers(), countOddNumbers()  */
 
 
-package arrayproblems;
+package function_array;
 
 import java.util.Scanner;
 

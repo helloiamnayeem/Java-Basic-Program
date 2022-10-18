@@ -6,7 +6,7 @@ Input: 9
 Output: Found no element*/
 
 
-package arrayproblems;
+package function_array;
 
 import java.util.Scanner;
 

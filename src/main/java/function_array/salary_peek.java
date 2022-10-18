@@ -3,7 +3,7 @@
 Find out the 3rd highest salary */
 
 
-package arrayproblems;
+package function_array;
 
 import java.util.ArrayList;
 import java.util.Arrays;

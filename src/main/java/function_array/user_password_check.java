@@ -1,7 +1,7 @@
 /*  6. Suppose a software system excepts valid credentials from user to logged in to the system.
 if the user inputs wrong password for 3 times, system will say that
 "Your user has been temporary locked". Let the username: admin, password: admin@123  */
-package arrayproblems;
+package function_array;
 
 import java.util.Scanner;
 
