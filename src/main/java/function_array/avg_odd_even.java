@@ -6,7 +6,6 @@ package function_array;
 
 import java.util.Scanner;
 
-
 public class avg_odd_even {
     
     public static float average(int[] number, int n)
@@ -44,10 +43,7 @@ public class avg_odd_even {
     
     return count;
     }
-    
-    
-    
-    
+
     public static void main(String[] args) {
         
         Scanner sc = new Scanner (System.in);

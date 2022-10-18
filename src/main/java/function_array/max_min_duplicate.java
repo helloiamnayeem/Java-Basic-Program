@@ -28,9 +28,10 @@ public class max_min_duplicate {
             
              i++;
          }
-         
-         System.out.print("max: "+max+" min "+min);
-         System.out.println();
+
+
+         System.out.print("max: "+max+" min "+min+ "\n");
+
          
          Set <Integer> duplicate =new HashSet<>();
          for(int j=0; j<n-1; j++)

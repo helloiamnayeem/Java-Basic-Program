@@ -11,7 +11,7 @@ package function_array;
 import java.util.Scanner;
 
 
-public class number_exist {
+public class NumberExistInArray {
 
    
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class number_exist {
         
         int[] arr= {1,3,5,7,2,4,6,8};
         
-        System.out.println("Enter a number [0-10]");
+        System.out.println("Enter a number: ");
         int number=sc.nextInt();
         
         int flag=0;

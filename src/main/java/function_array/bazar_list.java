@@ -7,29 +7,53 @@ package function_array;
 
 
 import java.util.*;
+
+
 public class bazar_list {
+	public void bazar_list(String itemsName) {
+
+		HashMap<String, Double> hashMap =new HashMap<>() ;
+
+		double result = 0;
+
+		if (bazarlist.containsKey(itemsName)) {
+
+			result = bazarlist.get(itemsName);
+			System.out.println("Items price: " + result);
+		} else {
+			System.out.println("No items found");
+		}
+
+
+	}
+
+
 	public static void main(String[] args) {
+
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Enter your products name: ");
 
 		String itemsName = input.nextLine();
 
-		searchItem(itemsName);
-		input.close();
+		double sum=0;
 
-                System.out.println("getTotal") ;
+
+		bazar_list(itemsName);
+
+		//System.out.println(obj.totalSum()) ;
+
+
 	}
-	public int getTotal (HashMap<Integer, Integer> p) {
-		int total = 0;
-		for (int value : p.values()) {
-			total += value;
-		}
-		return total;
-	}
-/*
-	public static double totalSum(){
-		Iterator<Map.Entry<String, Double>> itr = bazar_list.totalSum();
+
+
+
+
+
+
+	public double totalSum(){
+		HashMap<String, String> hm = this.getHashmap();
+		Iterator<Map.Entry<String, Double>> itr = bazar_list.entrySet().iterator();
 		double sum=0;
 		while (itr.hasNext()) {
 
@@ -41,70 +65,13 @@ public class bazar_list {
 
 		return sum;
 	}
-*/
 
-
-
-	public static void searchItem(String itemsName) {
-		HashMap<String, Integer> itemsList = new HashMap<>();
-
-		itemsList.put("Cucumber", 55);
-		itemsList.put("Onion", 30);
-		itemsList.put("Rice", 60);
-		itemsList.put("Chocolate", 10);
-
-		double result = 0;
-
-		if (itemsList.containsKey(itemsName)) {
-			result = itemsList.get(itemsName);
-			System.out.println("Items price: " + result);
-		} else {
-			System.out.println("No items found");
-		}
-	}
-}
-
-/*
-public class bazar_list
-{
-    public static HashMap<String, Double> bazarlist;
-    
-	public static boolean SearchItem(String name){
-	    if(bazarlist.containsKey(name))
-	        return true;
-	    else
-	        return false;
-	}
-	
-	public static double totalSum(){
-             Iterator<Map.Entry<String, Double>> itr = bazarlist.entrySet().iterator();
-	    double sum=0;
-	    while (itr.hasNext()) {
-
-            Map.Entry mapElement
-                = (Map.Entry)itr.next();
-            double price = (int)mapElement.getValue();
-            sum+=price;
-        }
-        
-        return sum;
-	}
-	
-	public static void main(String[] args) {
-	    double sum=0;
-		
-		bazarlist = new HashMap<>();
-		
+	public static HashMap<String, String> map = new HashMap<String, String>();  {
+		HashMap<String, Double> bazarlist = new HashMap<>();
 		bazarlist.put("Chaal", 90.0);
 		bazarlist.put("Daal", 70.0);
 		bazarlist.put("Ata", 50.0);
-                
-                bazar_list obj = new bazar_list();
-                System.out.println(obj.totalSum()) ;
-                
-		
-		return;
-		
 	}
+
+
 }
-*/
